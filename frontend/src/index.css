@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff6b6b;
+  --color-secondary: #fca5a5;
+  --color-accent: #fecaca;
+  --color-background: #fdf2f8;
+  --animate-bounce-slow: bounce 3s infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-pink-50 text-gray-800 font-sans;
+  }
+}
+
+/* Custom Scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fca5a5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6b6b;
+}
